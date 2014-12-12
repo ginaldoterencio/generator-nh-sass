@@ -61,15 +61,14 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   app: function () {
-    this.mkdir('css');
     this.directory('sass', 'sass');
-
     this.template('brand.scss', 'sass/output/brand.scss', this);
-
 
     for(var i = 0, j = this.modules.length; i < j; i++) {
       this.template('module.scss', 'sass/source/modules/_' + this.modules[i] + '.scss', { moduleName: this.modules[i] });
     }
+
+    this.mkdir('css');
   },
 
   git: function () {
