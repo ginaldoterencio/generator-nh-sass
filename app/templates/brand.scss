@@ -1,0 +1,5 @@
+@import "app";
+<% for (var i = 0, j = modules.length; i < j; i++) {%>
+@import "modules/<%= modules[i] %>";<% } %>
+
+@import "layout/home";

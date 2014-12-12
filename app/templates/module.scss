@@ -1,0 +1,17 @@
+@include respond-to(mobile) {
+	.bws-<%= moduleName %> {
+
+	}
+}
+
+@include respond-to(tablet) {
+	.bws-<%= moduleName %> {
+
+	}
+}
+
+@include respond-to(desktop) {
+	.bws-<%= moduleName %> {
+
+	}
+}
