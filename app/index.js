@@ -61,6 +61,7 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   app: function () {
+    this.mkdir('css');
     this.directory('sass', 'sass');
 
     this.template('brand.scss', 'sass/output/brand.scss', this);
