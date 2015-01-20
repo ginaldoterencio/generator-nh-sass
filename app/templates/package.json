@@ -1,0 +1,12 @@
+{
+  "name": "nh-sass-generator",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-scss-lint": "^0.3.4"
+  }
+}

@@ -1,0 +1,33 @@
+.homepage {
+  background: blue;
+}
+
+@include respond-to(mobile) {
+  .homepage {
+    background: red;
+  }
+}
+
+// @include respond-to(mobile-tablet) {
+//  .homepage {
+
+//  }
+// }
+
+// @include respond-to(tablet) {
+//  .homepage {
+
+//  }
+// }
+
+// @include respond-to(tablet-desktop) {
+//  .homepage {
+
+//  }
+// }
+
+// @include respond-to(desktop) {
+//  .homepage {
+
+//  }
+// }

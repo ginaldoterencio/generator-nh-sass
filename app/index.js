@@ -69,11 +69,21 @@ module.exports = yeoman.generators.Base.extend({
     }
 
     this.mkdir('css');
+    this.write('Gemfile', 'gem "sass", "~>3.4.0"');
   },
 
-  git: function () {
-    this.template('gitignore', '.gitignore');
-    this.copy('gitattributes', '.gitattributes');
+  mercurial: function () {
+    this.copy('hgignore', '.hgignore');
+  },
+
+  scsslint: function () {
+    this.copy('scss-lint.yml', '.scss-lint.yml');
+    this.write('scss-lint-report.xml', '');
+  },
+
+  grunt: function () {
+    this.copy('package.json', 'package.json');
+    this.copy('Gruntfile.js', 'Gruntfile.js');
   },
 
   bower: function () {
@@ -90,13 +100,13 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   editorConfig: function () {
-    this.copy('editorconfig', 'sass/.editorconfig');
+    this.copy('editorconfig', '.editorconfig');
   },
 
   install: function () {
     this.on('end', function () {
       if (!this.options['skip-install']) {
-        this.bowerInstall();
+        this.installDependencies();
       }
     });
   }

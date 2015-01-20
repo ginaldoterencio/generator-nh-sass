@@ -1,5 +1,5 @@
-@import "app";
+@import '../source/app';
 <% for (var i = 0, j = modules.length; i < j; i++) {%>
-@import "modules/<%= modules[i] %>";<% } %>
+@import '../source/modules/<%= modules[i] %>';<% } %>
 
-@import "layout/home";
+@import '../source/pages/home';

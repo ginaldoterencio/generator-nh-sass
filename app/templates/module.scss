@@ -1,17 +1,33 @@
-@include respond-to(mobile) {
-	.bws-<%= moduleName %> {
+// .bws-<%= moduleName %> {
 
-	}
-}
+// }
+	
+// @include respond-to(mobile) {
+// 	.bws-<%= moduleName %> {
 
-@include respond-to(tablet) {
-	.bws-<%= moduleName %> {
+// 	}
+// }
 
-	}
-}
+// @include respond-to(mobile-tablet) {
+// 	.bws-<%= moduleName %> {
 
-@include respond-to(desktop) {
-	.bws-<%= moduleName %> {
+// 	}
+// }
 
-	}
-}
+// @include respond-to(tablet) {
+// 	.bws-<%= moduleName %> {
+
+// 	}
+// }
+
+// @include respond-to(tablet-desktop) {
+// 	.bws-<%= moduleName %> {
+
+// 	}
+// }
+
+// @include respond-to(desktop) {
+// 	.bws-<%= moduleName %> {
+
+// 	}
+// }

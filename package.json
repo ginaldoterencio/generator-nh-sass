@@ -1,6 +1,6 @@
 {
   "name": "generator-nh-sass",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Scaffold out a sass project",
   "repository": "ginaldoterencio/generator-nh-sass",
   "license": "BSD",
