@@ -1,8 +1,10 @@
-@import 
+@import
 // lib
 '../bower_components/bourbon/dist/bourbon',
 // vars
 'app/typography',
 'app/colors',
+// mixins
+'app/functions/hsl-diff';
 // mixins
 'app/mixins/respond-to';

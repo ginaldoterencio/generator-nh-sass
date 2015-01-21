@@ -6,15 +6,15 @@
 ## Getting Started
 
 - Install: `npm install -g generator-nh-sass`
-- Run: `yo nh-sass`
-- Run sass: `sass --watch sass/{output,source}:css -t compressed`
+- Run generator: `yo nh-sass`
+- Run grunt: `grunt`
 
 
 ## Options
 
 * `--skip-install`
 
-  Skips the automatic execution of `bower` after scaffolding has finished.
+  Skips the automatic execution of `bower` and `npm` after scaffolding has finished.
 
 
 ## License

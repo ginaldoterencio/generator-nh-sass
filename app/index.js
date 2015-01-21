@@ -3,6 +3,7 @@
 var join = require('path').join;
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
+var yosay = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
   constructor: function () {
@@ -15,7 +16,7 @@ module.exports = yeoman.generators.Base.extend({
 
     // welcome message
     if (!this.options['skip-welcome-message']) {
-      this.log(require('yosay')("Bem-vindo ao NH Sass Generator"));
+      this.log(yosay("Bem-vindo ao NH Sass Generator"));
     }
 
     var prompts = [{
@@ -91,7 +92,7 @@ module.exports = yeoman.generators.Base.extend({
       name: this._.slugify(this.appname),
       private: true,
       dependencies: {
-          bourbon: "~4.0.2",
+        bourbon: "~4.0.2"
       }
     };
 

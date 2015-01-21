@@ -1,3 +1,4 @@
 .tmp
 .sass-cache/*
 sass/bower_components
+node_modules

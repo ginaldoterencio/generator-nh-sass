@@ -1,0 +1,3 @@
+@function hsl-diff($color, $h, $s, $l) {
+  @return adjust-color($color, $hue: $h, $saturation: $s, $lightness: $l);
+}
