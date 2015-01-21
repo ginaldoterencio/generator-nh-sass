@@ -7,7 +7,7 @@
 
 - Install: `npm install -g generator-nh-sass`
 - Run generator: `yo nh-sass`
-- Run grunt: `grunt`
+- Run grunt: `grunt watch`
 
 
 ## Options
